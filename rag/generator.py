@@ -257,8 +257,7 @@ Question: {query}
         return "Error generating response. Please try again.", []
 
     # ✅ STORE HISTORY (CRITICAL STEP)
-    add_user_message(user_id, "user", query)
-    add_user_message(user_id, "assistant", answer)
+    
 
     # ✅ Extract sources
     sources = sorted({chunk.source for chunk in chunks})
