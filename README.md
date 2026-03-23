@@ -209,6 +209,5 @@ User (Telegram)
 
 ## Notes
 
-- The bot uses **polling** mode (not webhooks). For production, consider switching to webhook mode behind a reverse proxy.
 - Re-ingestion is skipped on restart via the `ingestion_log` table in SQLite. To force re-ingestion, delete `data/faiss_index.bin` and restart.
 - The LRU cache is in-memory only and resets on restart.
