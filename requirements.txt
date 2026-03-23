@@ -1,0 +1,24 @@
+# DocuBot requirements
+# Install with: pip install -r requirements.txt
+
+# Telegram bot
+python-telegram-bot==21.3
+
+# Embeddings
+sentence-transformers==3.0.1
+
+# Vector search
+faiss-cpu==1.8.0          # Use faiss-gpu if you have CUDA
+
+# LLM backends (use one or both)
+openai==1.35.3             # For OpenAI API
+requests==2.32.3           # For Ollama local API
+
+# Image description (Option B / /image command)
+transformers==4.42.4
+Pillow==10.4.0
+torch==2.3.1               # CPU build; for CUDA: pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# Utilities
+python-dotenv==1.0.1
+numpy==1.26.4
